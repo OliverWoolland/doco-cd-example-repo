@@ -1,7 +1,6 @@
 services:
-  whoami:
-    image: traefik/whoami:latest
-    container_name: whoami
-    ports:
-      - "8080:80"
-    restart: unless-stopped
+  viewer:
+    image: busybox:latest
+    command: ["busybox", "httpd", "-f", "-p", "8080", "-h", "/www"]
+    volumes:
+      - ./test.md:/www/test.md:ro
