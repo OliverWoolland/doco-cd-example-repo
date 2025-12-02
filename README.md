@@ -12,7 +12,7 @@ It comprises three files:
 To force a dummy update:
 
 ```bash
-uuidgen > test.md && git add test.md && git commit -m "Update test.md" && git push
+echo "<h1>$(uuidgen)</h1>" > index.html && git add index.html && git commit -m "Update index.html" && git push
 ```
 
 You can then view the updated service on `localhost:8080`

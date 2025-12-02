@@ -1,9 +1,10 @@
 services:
   viewer:
     image: busybox:latest
+    container_name: example-viewer
     command: ["busybox", "httpd", "-f", "-p", "8080", "-h", "/www"]
     ports:
-      - "8080:80"
+      - "8080:8080"
     volumes:
-      - ./test.md:/www/test.md:ro
+      - ./index.html:/www/index.html:ro
     restart: unless-stopped
