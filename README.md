@@ -17,4 +17,10 @@ To force a dummy update:
 echo "<h1>$(uuidgen)</h1>" > index.html && git add index.html && git commit -m "Update index.html" && git push
 ```
 
-You can then view the updated service on `localhost:8080`
+You can then view the updated service on `localhost:8080` however suits you best
+
+A live view can be obtained with
+
+```bash
+watch -n 1 curl -s localhost:8080
+```
