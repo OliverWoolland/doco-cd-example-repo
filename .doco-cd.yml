@@ -1,1 +1,17 @@
+# Full options at https://github.com/kimdre/doco-cd/wiki/Deploy-Settings
+
+# Deployment 
 name: doco-example
+
+# Who, Where, How
+reference: main # branch to deploy - defaults to whatever the webhook says
+webhook_filter: ^refs/heads/main$ # only respond to events on main
+working_dir: . # default
+compose_files:
+  - compose.yaml # subset of default
+env_files:
+  - .env # default
+
+# Tidying
+remove_orphans: true
+prune_images: true
