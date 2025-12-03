@@ -5,7 +5,7 @@ This repo demonstrates the minimum needed ot use doco to deloy a Docker Compose 
 It comprises three files:
 - `.doco-cd.yml` this file controls the behaviour of doco-cd and what is deployed
 - `compose.yaml` this is a standard docker compose file
-- `test.md` this is a dummy file for testing the push webhook triggering
+- `index.html` this is a dummy file for testing the push webhook triggering
 
 ## Example commit
 
