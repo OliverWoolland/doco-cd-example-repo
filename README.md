@@ -2,6 +2,8 @@
 
 This repo demonstrates the minimum needed ot use doco to deloy a Docker Compose stack.
 
+It is to be used in conjunction with the [example server ](https://github.com/OliverWoolland/doco-cd-server)
+
 It comprises three files:
 - `.doco-cd.yml` this file controls the behaviour of doco-cd and what is deployed
 - `compose.yaml` this is a standard docker compose file
